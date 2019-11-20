@@ -11,13 +11,40 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <VBox prefHeight="578.0" prefWidth="727.0">
          <children>
-            <VBox prefHeight="117.0" prefWidth="710.0" />
+            <VBox prefHeight="117.0" prefWidth="710.0">
+               <children>
+                  <Pane prefHeight="75.0" prefWidth="717.0">
+                     <children>
+                        <Text layoutX="11.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Competitor score:">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="yourScore" layoutX="237.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="11.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your score:">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="competitorScore" layoutX="237.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children></VBox>
             <GridPane fx:id="gridPane" gridLinesVisible="true">
               <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="40.0" />
@@ -199,130 +226,130 @@
                <children>
                   <Pane prefHeight="20.0" prefWidth="56.0">
                      <children>
-                        <Group>
+                        <Group fx:id="group2_1">
                            <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-                              <Text layoutX="6.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                              <Rectangle fx:id="rect2_1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+                              <Text fx:id="text2_1" layoutX="6.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                            </children>
                         </Group>
                      </children>
                   </Pane>
                   <Pane prefHeight="20.0" prefWidth="56.0">
                      <children>
-                        <Group>
+                        <Group fx:id="group2_2">
                            <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-                              <Text layoutX="6.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                              <Rectangle fx:id="rect2_2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+                              <Text fx:id="text2_2" layoutX="6.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                            </children>
                         </Group>
                      </children>
                   </Pane>
                   <Pane prefHeight="20.0" prefWidth="56.0">
                      <children>
-                        <Group>
+                        <Group fx:id="group2_3">
                            <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-                              <Text layoutX="6.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                              <Rectangle fx:id="rect2_3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+                              <Text fx:id="text2_3" layoutX="6.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                            </children>
                         </Group>
                      </children>
                   </Pane>
                   <Pane prefHeight="20.0" prefWidth="56.0">
                      <children>
-                        <Group>
+                        <Group fx:id="group2_4">
                            <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-                              <Text layoutX="6.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                              <Rectangle fx:id="rect2_4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+                              <Text fx:id="text2_4" layoutX="6.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                            </children>
                         </Group>
                      </children>
                   </Pane>
                   <Pane prefHeight="20.0" prefWidth="56.0">
                      <children>
-                        <Group>
+                        <Group fx:id="group2_5">
                            <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-                              <Text layoutX="7.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                              <Rectangle fx:id="rect2_5" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+                              <Text fx:id="text2_5" layoutX="7.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                            </children>
                         </Group>
                      </children>
                   </Pane>
                   <Pane prefHeight="20.0" prefWidth="56.0">
                      <children>
-                        <Group>
+                        <Group fx:id="group2_6">
                            <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-                              <Text layoutX="7.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                              <Rectangle fx:id="rect2_6" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+                              <Text fx:id="text2_6" layoutX="7.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                            </children>
                         </Group>
                      </children>
                   </Pane>
                   <Pane prefHeight="20.0" prefWidth="56.0">
                      <children>
-                        <Group>
+                        <Group fx:id="group2_7">
                            <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-                              <Text layoutX="6.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                              <Rectangle fx:id="rect2_7" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+                              <Text fx:id="text2_7" layoutX="6.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                            </children>
                         </Group>
                      </children>
                   </Pane>
                   <Pane prefHeight="20.0" prefWidth="56.0">
                      <children>
-                        <Group>
+                        <Group fx:id="group2_8">
                            <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-                              <Text layoutX="7.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                              <Rectangle fx:id="rect2_8" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+                              <Text fx:id="text2_8" layoutX="7.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                            </children>
                         </Group>
                      </children>
                   </Pane>
                   <Pane prefHeight="20.0" prefWidth="56.0">
                      <children>
-                        <Group>
+                        <Group fx:id="group2_9">
                            <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-                              <Text layoutX="7.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                              <Rectangle fx:id="rect2_9" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+                              <Text fx:id="text2_9" layoutX="7.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                            </children>
                         </Group>
                      </children>
                   </Pane>
                   <Pane prefHeight="20.0" prefWidth="56.0">
                      <children>
-                        <Group>
+                        <Group fx:id="group2_10">
                            <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-                              <Text layoutX="7.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                              <Rectangle fx:id="rect2_10" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+                              <Text fx:id="text2_10" layoutX="7.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                            </children>
                         </Group>
                      </children>
                   </Pane>
                   <Pane prefHeight="20.0" prefWidth="56.0">
                      <children>
-                        <Group>
+                        <Group fx:id="group2_11">
                            <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-                              <Text layoutX="7.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                              <Rectangle fx:id="rect2_11" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+                              <Text fx:id="text2_11" layoutX="7.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                            </children>
                         </Group>
                      </children>
                   </Pane>
                   <Pane prefHeight="20.0" prefWidth="56.0">
                      <children>
-                        <Group>
+                        <Group fx:id="group2_12">
                            <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-                              <Text layoutX="6.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                              <Rectangle fx:id="rect2_12" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+                              <Text fx:id="text2_12" layoutX="6.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                            </children>
                         </Group>
                      </children>
                   </Pane>
                   <Pane prefHeight="20.0" prefWidth="56.0">
                      <children>
-                        <Group>
+                        <Group fx:id="group2_13">
                            <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-                              <Text layoutX="7.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                              <Rectangle fx:id="rect2_13" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+                              <Text fx:id="text2_13" layoutX="7.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                            </children>
                         </Group>
                      </children>
@@ -335,12 +362,12 @@
          <children>
             <HBox prefHeight="78.0" prefWidth="719.0">
                <children>
-                  <Button mnemonicParsing="false" onMouseClicked="#startGame" text="Start Game">
+                  <Button fx:id="startButton" mnemonicParsing="false" onMouseClicked="#startGame" text="Start Game">
                      <HBox.margin>
                         <Insets left="300.0" />
                      </HBox.margin>
                   </Button>
-                  <Button fx:id="restartButton" mnemonicParsing="false" onMouseClicked="#reload" text="Button">
+                  <Button fx:id="restartButton" mnemonicParsing="false" onMouseClicked="#reload" text="Exit">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>
