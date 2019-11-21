@@ -94,13 +94,16 @@ public class Controller {
            int index = rand.nextInt(listElements.size());
            int index1 = rand.nextInt(listElements.size());
            textsValues[counter]= (listElements.get(index)).toString();
+         //tablica z wartosciami dla komputera
            intTextsValues2[counter]=listElements.get(index1);
            counter++;
        }
+      //posortowanie wartosci dla komputera
        Arrays.sort(intTextsValues2);
        for(int i=0;i<13;i++){
           textsValues2[i]= Integer.toString(intTextsValues2[i]);
        }
+       //obliczenie punktow dla komputera
        for(int i=1;i<13;i++){
            if (intTextsValues2[i]== intTextsValues2[i-1]){
                competitorScoreInt++;
@@ -109,6 +112,7 @@ public class Controller {
                competitorScoreInt++;
            }
        }
+       //dodanie klockow komputera
        gridPane.add(group2_1, 0, 11);
        gridPane.add(group2_2, 1, 11);
        gridPane.add(group2_3, 2, 11);
